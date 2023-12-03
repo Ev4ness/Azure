@@ -52,7 +52,7 @@ async def _help(ult):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Addons"][plug]:
                     output += i
-                output += "\n© @TeamUltroid"
+                output += "\n© @Usern4meDoesNotExist404"
                 await ult.eor(output)
             elif HELP.get("VCBot") and plug in HELP["VCBot"]:
                 output = f"**Plugin** - `{plug}`\n"
@@ -66,7 +66,7 @@ async def _help(ult):
                     for d in LIST[plug]:
                         x += HNDLR + d
                         x += "\n"
-                    x += "\n© @TeamUltroid"
+                    x += "\n© @carisahabatonline_id"
                     await ult.eor(x)
                 except BaseException:
                     file = None
@@ -105,7 +105,7 @@ async def _help(ult):
                     await ult.eor(output)
         except BaseException as er:
             LOGS.exception(er)
-            await ult.eor("Error 🤔 occured.")
+            await ult.eor("Terjadi kesalahan 🤔.")
     else:
         try:
             results = await ult.client.inline_query(asst.me.username, "ultd")
