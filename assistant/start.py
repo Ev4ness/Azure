@@ -113,7 +113,7 @@ async def ultroid(event):
             if udB.get_key("PMBOT"):
                 ok = "You can contact my master using this bot!!\n\nSend your Message, I will Deliver it To Master."
             await event.reply(
-                f"Hey there {mention}, this is Ultroid Assistant of {me}!\n\n{ok}",
+                f"Hey there {mention}, this is BeeUBot Assistant of {me}!\n\n{ok}",
                 file=udB.get_key("STARTMEDIA"),
                 buttons=[Button.inline("Info.", data="ownerinfo")]
                 if Owner_info_msg
@@ -160,7 +160,7 @@ async def ultroid(event):
 @callback("stat", owner=True)
 async def botstat(event):
     ok = len(udB.get_key("BOT_USERS") or [])
-    msg = """Ultroid Assistant - Stats
+    msg = """BeeUBot Assistant - Stats
 Total Users - {}""".format(
         ok,
     )
