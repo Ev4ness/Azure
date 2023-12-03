@@ -79,12 +79,12 @@ buttons = [
 alive_txt = """
 BeeUBot
 
-  ◍ Version - {}
-  ◍ Py-Ultroid - {}
-  ◍ Telethon - {}
+  ▢ Version - {}
+  ▢ Py-Ultroid - {}
+  ▢ Telethon - {}
 """
 
-in_alive = "{}\n\n🌀 <b>BeeUBot Version -><b> <code>{}</code>\n🌀 <b>PyUBot -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b>[ {} ]\n\n• <b>Join @carisahabatonline_id</b>"
+in_alive = "{}\n\n▢ <b>BeeUBot Version -><b> <code>{}</code>\n▢ <b>PyUBot -></b> <code>{}</code>\n▢ <b>Python -></b> <code>{}</code>\n▢ <b>Uptime -></b> <code>{}</code>\n▢ <b>Branch -></b>[ {} ]\n\n• <b>Join @carisahabatonline_id</b>"
 
 
 @callback("alive")
@@ -130,7 +130,7 @@ async def lol(ult):
         )
 
         if _e := udB.get_key("ALIVE_EMOJI"):
-            als = als.replace("🌀", _e)
+            als = als.replace("▢", _e)
     else:
         parse = "md"
         als = (get_string("alive_1")).format(
@@ -272,7 +272,7 @@ async def inline_alive(ult):
     )
 
     if _e := udB.get_key("ALIVE_EMOJI"):
-        als = als.replace("🌀", _e)
+        als = als.replace("▢", _e)
     builder = ult.builder
     if pic:
         try:
