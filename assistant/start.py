@@ -29,7 +29,7 @@ if Owner_info_msg is None:
 
 **Message Forwards** - {udB.get_key("PMBOT")}
 
-**Ultroid [v{ultroid_version}](https://github.com/TeamUltroid/Ultroid), powered by @TeamUltroid**
+**Bee Userbot [v{ultroid_version}](https://t.me/SpotifyStreamMusic), powered by @Usern4meDoesNotExist404**
 """
 
 
@@ -51,7 +51,7 @@ _settings = [
 
 _start = [
     [
-        Button.inline("Lᴀɴɢᴜᴀɢᴇ 🌐", data="lang"),
+        Button.inline("Lᴀɴɢᴜᴀɢᴇ 🇮🇩", data="lang"),
         Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"),
     ],
     [
@@ -68,7 +68,7 @@ async def own(event):
         mention=event.sender.mention, me=inline_mention(ultroid_bot.me)
     )
     if custom_info:
-        msg += "\n\n• Powered by **@TeamUltroid**"
+        msg += "\n\n• Powered by **@Usern4meDoesNotExist404**"
     await event.edit(
         msg,
         buttons=[Button.inline("Close", data="closeit")],
