@@ -21,20 +21,20 @@ from . import append_or_update, owner_and_sudos
 OWNER = ultroid_bot.full_name
 
 MSG = f"""
-**Ultroid - UserBot**
+**Bee - UserBot**
 ➖➖➖➖➖➖➖➖➖➖
 **Owner**: [{OWNER}](tg://user?id={ultroid_bot.uid})
-**Support**: @TeamUltroid
+**Support**: @SpotifyStreamMusic
 ➖➖➖➖➖➖➖➖➖➖
 """
 
 IN_BTTS = [
     [
         Button.url(
-            "Repository",
-            url="https://github.com/TeamUltroid/Ultroid",
+            "Owner",
+            url="https://t.me/Usern4meDoesNotExist404",
         ),
-        Button.url("Support", url="https://t.me/UltroidSupportChat"),
+        Button.url("Support", url="https://t.me/carisahabatonline_id"),
     ]
 ]
 
@@ -98,12 +98,12 @@ def in_pattern(pattern=None, owner=False, **kwargs):
             if owner and event.sender_id not in owner_and_sudos():
                 res = [
                     await event.builder.article(
-                        title="Ultroid Userbot",
-                        url="https://t.me/TeamUltroid",
-                        description="(c) TeamUltroid",
+                        title="Bee Userbot",
+                        url="https://t.me/SpotifyStreamMusic",
+                        description="(c) Bee Userbot",
                         text=MSG,
                         thumb=InputWebDocument(
-                            "https://graph.org/file/dde85d441fa051a0d7d1d.jpg",
+                            "https://mallucampaign.in/images/img_1701573714.jpg",
                             0,
                             "image/jpeg",
                             [],
@@ -134,7 +134,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/UltroidSupportChat"
+                                    "Report", "https://t.me/carisahabatonline_id"
                                 ),
                             )
                         ]
