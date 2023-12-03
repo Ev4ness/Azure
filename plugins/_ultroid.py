@@ -14,16 +14,16 @@ from telethon.errors import (
 from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, ultroid_cmd
 
 REPOMSG = """
-• **BEE UBOT** •\n
-• Owner - [Klik disini](https://t.me/Usern4meDoesNotExist404)
-• Group - [Klik disini](https://t.me/carisahabatonline_id)
-• Support - @SpotifyStreamMusic
+▢ **BEE UBOT** •\n
+▢ Owner - [Klik disini](https://t.me/Usern4meDoesNotExist404)
+▢ Group - [Klik disini](https://t.me/carisahabatonline_id)
+▢ Support - @SpotifyStreamMusic
 """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/TeamUltroid/Ultroid"),
-        Button.url("Addons", "https://github.com/TeamUltroid/UltroidAddons"),
+        Button.url(get_string("bot_3"), "https://t.me/SpotifyStreamMusic"),
+        Button.url("Developer", "https://t.me/Usern4meDoesNotExist404"),
     ],
     [Button.url("Support Group", "t.me/carisahabatonline_id")],
 ]
@@ -63,4 +63,4 @@ async def useUltroid(rs):
         buttons=button,
     )
     if not (rs.chat_id == LOG_CHANNEL and rs.client._bot):
-        await eor(rs, f"**[Click Here]({msg.message_link})**")
+        await eor(rs, f"**[Kilik Disini!]({msg.message_link})**")
