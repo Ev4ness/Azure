@@ -146,14 +146,14 @@ async def setting(event):
         link_preview=False,
         buttons=[
             [
-                Button.inline("📚 Ping", data="pkng"),
-                Button.inline("📝 Uptime", data="upp"),
+                Button.inline("🏓 Ping", data="pkng"),
+                Button.inline("🧰 Uptime", data="upp"),
             ],
             [
-                Button.inline("🏓 Stats", data="alive"),
-                Button.inline("⚙️ Update", data="doupdate"),
+                Button.inline("📚 Stats", data="alive"),
+                Button.inline("📝 Update", data="doupdate"),
             ],
-            [Button.inline("« Back", data="open")],
+            [Button.inline("⚙️ Main Menu", data="open")],
         ],
     )
 
@@ -214,7 +214,7 @@ async def uptd_plugin(event):
         data += f"|{index}"
     buttons.append(
         [
-            Button.inline("« Back", data=data),
+            Button.inline("⚙️ Main Menu", data=data),
         ]
     )
     try:
@@ -245,7 +245,7 @@ async def _(event):
             file="ultroid_updates.txt",
             buttons=[
                 [Button.inline("Update Now", data="updatenow")],
-                [Button.inline("« Back", data="ownr")],
+                [Button.inline("⚙️ Main Menu", data="ownr")],
             ],
         )
         remove("ultroid_updates.txt")
@@ -254,7 +254,7 @@ async def _(event):
             changelog_str,
             buttons=[
                 [Button.inline("Update Now", data="updatenow")],
-                [Button.inline("« Back", data="ownr")],
+                [Button.inline("⚙️ Main Menu", data="ownr")],
             ],
             parse_mode="html",
         )
@@ -287,7 +287,7 @@ async def _(e):
     button = InButtons.copy()
     button.append(
         [
-            Button.inline("« Back", data="open"),
+            Button.inline("⚙️ Main Menu", data="open"),
         ],
     )
     await e.edit(buttons=button, link_preview=False)
@@ -322,7 +322,7 @@ def page_num(index, key):
     rows = udB.get_key("HELP_ROWS") or 5
     cols = udB.get_key("HELP_COLUMNS") or 2
     loaded = HELP.get(key, [])
-    emoji = udB.get_key("EMOJI_IN_HELP") or "▢"
+    emoji = udB.get_key("EMOJI_IN_HELP") or ""
     List = [
         Button.inline(f"{emoji} {x} {emoji}", data=f"uplugin_{key}_{x}|{index}")
         for x in sorted(loaded)
@@ -335,17 +335,17 @@ def page_num(index, key):
         new_ = fl_[0] if fl_ else []
         index = 0
     if index == 0 and len(fl_) == 1:
-        new_.append([Button.inline("« Back", data="open")])
+        new_.append([Button.inline("⚙️ Main Menu", data="open")])
     else:
         new_.append(
             [
                 Button.inline(
-                    "« Pʀᴇᴠɪᴏᴜs",
+                    "⌫",
                     data=f"uh_{key}_{index-1}",
                 ),
-                Button.inline("« Back", data="open"),
+                Button.inline("⬅️ Back", data="open"),
                 Button.inline(
-                    "Berikutnya »",
+                    "⌦",
                     data=f"uh_{key}_{index+1}",
                 ),
             ]
