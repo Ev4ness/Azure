@@ -128,9 +128,7 @@ async def lol(ult):
             uptime,
             kk,
         )
-
-        if _e := udB.get_key("ALIVE_EMOJI"):
-            als = als.replace("▢", _e)
+       
     else:
         parse = "md"
         als = (get_string("alive_1")).format(
@@ -143,9 +141,7 @@ async def lol(ult):
             __version__,
             kk,
         )
-
-        if a := udB.get_key("ALIVE_EMOJI"):
-            als = als.replace("✵", a)
+        
     if pic:
         try:
             await ult.reply(
@@ -183,7 +179,7 @@ async def lol(ult):
 @ultroid_cmd(pattern="ping$", chats=[], type=["official", "assistant"])
 async def _(event):
     start = time.time()
-    x = await event.eor("Pong !")
+    x = await event.eor("▢ Pong !")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     await x.edit(get_string("ping").format(end, uptime))
@@ -270,10 +266,7 @@ async def inline_alive(ult):
     als = in_alive.format(
         header, f"{ultroid_version} [{HOSTED_ON}]", UltVer, pyver(), uptime, kk
     )
-
-    if _e := udB.get_key("ALIVE_EMOJI"):
-        als = als.replace("▢", _e)
-    builder = ult.builder
+   
     if pic:
         try:
             if ".jpg" in pic:
