@@ -33,7 +33,7 @@ from . import *
 from ._inline import something
 
 
-@kazu_cmd(pattern="[Gg][c][a][s][t]( (.*)|$)", fullsudo=false)
+@ultroid_cmd(pattern="[Gg][c][a][s][t]( (.*)|$)", fullsudo=false)
 async def gcast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
@@ -73,7 +73,7 @@ async def gcast(event):
     await kk.edit(f"**berhasil di {done} obrolan, kesalahan {er} obrolan.**")
 
 
-@kazu_cmd(pattern="[gG][u][c][a][s][t]( (.*)|$)", fullsudo=false)
+@ultroid_cmd(pattern="[gG][u][c][a][s][t]( (.*)|$)", fullsudo=false)
 async def gucast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
@@ -103,18 +103,18 @@ async def gucast(event):
     await kk.edit(f"berhasil di {done} obrolan, kesalahan {er} obrolan")
 
 
-@kazu_cmd(pattern="addbl")
+@ultroid_cmd(pattern="addbl")
 @register(incoming=true, from_users=DEVLIST, pattern=r"^addbl")
 async def blacklist_(event):
     await gblacker(event, "add")
 
 
-@kazu_cmd(pattern="delbl")
+@ultroid_cmd(pattern="delbl")
 async def ungblacker(event):
     await gblacker(event, "remove")
 
 
-@kazu_cmd(pattern="blchat")
+@ultroid_cmd(pattern="blchat")
 async def chatbl(event):
     id = event.chat_id
     if xx := list_bl(id):
