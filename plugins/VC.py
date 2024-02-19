@@ -37,7 +37,7 @@ from telethon.tl.functions.phone import EditGroupCallTitleRequest as settitle
 from telethon.tl.functions.phone import GetGroupCallRequest as getvc
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
-from . import kazu_cmd, vc_asst, owner_and_sudos, get_string, udB, inline_mention, add_to_queue, mediainfo, file_download, LOGS, is_url_ok, bash, download, Player, VC_QUEUE, list_queue, CLIENTS,VIDEO_ON, vid_download, dl_playlist
+from . import pyUltroid_cmd, vc_asst, owner_and_sudos, get_string, udB, inline_mention, add_to_queue, mediainfo, file_download, LOGS, is_url_ok, bash, download, Player, VC_QUEUE, list_queue, CLIENTS,VIDEO_ON, vid_download, dl_playlist
 
 
 async def get_call(event):
@@ -85,7 +85,7 @@ async def _(e):
     await ok.edit(get_string("vct_5").format(z))
 
 
-@kazu_cmd(
+@pyUltroid_cmd(
     pattern="startvc$",
     admins_only=True,
     groups_only=True,
@@ -98,7 +98,7 @@ async def _(e):
         await e.eor(f"`{ex}`")
 
 
-@kazu_cmd(
+@pyUltroid_cmd(
     pattern="vctitle(?: |$)(.*)",
     admins_only=True,
     groups_only=True,
