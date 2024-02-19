@@ -24,9 +24,9 @@
 """
 import asyncio
 
-from Kazu.dB import DEVLIST
-from Kazu.dB.gcast_blacklist_db import add_gblacklist, list_bl, rem_gblacklist
-from Kazu.fns.tools import create_tl_btn, format_btn, get_msg_button
+from pyUltroid.dB import DEVLIST
+from pyUltroid.dB.gcast_blacklist_db import add_gblacklist, list_bl, rem_gblacklist
+from pyUltroid.fns.tools import create_tl_btn, format_btn, get_msg_button
 from telethon.errors.rpcerrorlist import FloodWaitError
 
 from . import *
