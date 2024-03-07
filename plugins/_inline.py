@@ -61,7 +61,7 @@ SUP_BUTTONS = [
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
     TLINK = inline_pic() or "https://mallucampaign.in/images/img_1701574887.jpg"
-    MSG = "• **Bee Ubot •**"
+    MSG = "• **Dante Ubot •**"
     WEB0 = InputWebDocument(
         "https://mallucampaign.in/images/img_1701574887.jpg", 0, "image/jpg", []
     )
@@ -71,7 +71,7 @@ async def inline_alive(o):
             text=MSG,
             include_media=True,
             buttons=SUP_BUTTONS,
-            title="Bee Ubot",
+            title="Dante Ubot",
             description="Userbot | Telethon",
             url=TLINK,
             thumb=WEB0,
@@ -82,7 +82,7 @@ async def inline_alive(o):
         RES,
         private=True,
         cache_time=300,
-        switch_pm="👥 BEEUBOT PORTAL",
+        switch_pm="👥 DANTEUBOT PORTAL",
         switch_pm_param="start",
     )
 
@@ -146,14 +146,14 @@ async def setting(event):
         link_preview=False,
         buttons=[
             [
-                Button.inline("🏓 Ping", data="pkng"),
-                Button.inline("🧰 Uptime", data="upp"),
+                Button.inline("Ping", data="pkng"),
+                Button.inline("Uptime", data="upp"),
             ],
             [
-                Button.inline("📚 Stats", data="alive"),
-                Button.inline("📝 Update", data="doupdate"),
+                Button.inline("Stats", data="alive"),
+                Button.inline("Update", data="doupdate"),
             ],
-            [Button.inline("⚙️ Main Menu", data="open")],
+            [Button.inline("Back", data="open")],
         ],
     )
 
@@ -195,7 +195,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© @CariSahabatOnline_Id"
+    help_ += "\n@MusicStreamSupport"
     buttons = []
     if inline_pic():
         data = f"sndplug_{key}_{file}"
@@ -204,7 +204,7 @@ async def uptd_plugin(event):
         buttons.append(
             [
                 Button.inline(
-                    "⚙️ Kirim Pulgin",
+                    "Kirim Pulgin",
                     data=data,
                 )
             ]
@@ -214,7 +214,7 @@ async def uptd_plugin(event):
         data += f"|{index}"
     buttons.append(
         [
-            Button.inline("⚙️ Main Menu", data=data),
+            Button.inline("Back", data=data),
         ]
     )
     try:
@@ -244,8 +244,8 @@ async def _(event):
             get_string("upd_5"),
             file="ultroid_updates.txt",
             buttons=[
-                [Button.inline("Update Now", data="updatenow")],
-                [Button.inline("⚙️ Main Menu", data="ownr")],
+                [Button.inline("Update", data="updatenow")],
+                [Button.inline("Back", data="ownr")],
             ],
         )
         remove("ultroid_updates.txt")
@@ -253,8 +253,8 @@ async def _(event):
         await event.edit(
             changelog_str,
             buttons=[
-                [Button.inline("Update Now", data="updatenow")],
-                [Button.inline("⚙️ Main Menu", data="ownr")],
+                [Button.inline("Update", data="updatenow")],
+                [Button.inline("Back", data="ownr")],
             ],
             parse_mode="html",
         )
@@ -287,7 +287,7 @@ async def _(e):
     button = InButtons.copy()
     button.append(
         [
-            Button.inline("⚙️ Main Menu", data="open"),
+            Button.inline("Back", data="open"),
         ],
     )
     await e.edit(buttons=button, link_preview=False)
@@ -319,7 +319,7 @@ async def on_plug_in_callback_query_handler(event):
 
 
 def page_num(index, key):
-    rows = udB.get_key("HELP_ROWS") or 5
+    rows = udB.get_key("HELP_ROWS") or 4
     cols = udB.get_key("HELP_COLUMNS") or 2
     loaded = HELP.get(key, [])
     emoji = udB.get_key("EMOJI_IN_HELP") or ""
@@ -335,17 +335,17 @@ def page_num(index, key):
         new_ = fl_[0] if fl_ else []
         index = 0
     if index == 0 and len(fl_) == 1:
-        new_.append([Button.inline("⚙️ Main Menu", data="open")])
+        new_.append([Button.inline("Back", data="open")])
     else:
         new_.append(
             [
                 Button.inline(
-                    "⌫",
+                    "❮",
                     data=f"uh_{key}_{index-1}",
                 ),
-                Button.inline("⬅️ Back", data="open"),
+                Button.inline("Back", data="open"),
                 Button.inline(
-                    "⌦",
+                    "❯",
                     data=f"uh_{key}_{index+1}",
                 ),
             ]
@@ -398,7 +398,7 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Ubot Op",
+                            title="Dante Op",
                             text=txt,
                             description="@Usern4meDoesNotExist404",
                             buttons=btn,
@@ -413,10 +413,10 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="Ultroid Op",
+                        title="Dante Op",
                         type=_type,
                         text=txt,
-                        description="@CariSahabatOnline_Id",
+                        description="@MusicStreamSupport",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
