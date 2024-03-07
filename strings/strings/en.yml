@@ -137,11 +137,11 @@ autopic_4: "AUTOPIC was not in use !!"
 autopic_5: "AUTOPIC Stopped!"
 
 # inline
-inline_1: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/UltroidSupportChat)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nPʟᴜɢɪɴs ~ {}**"
-inline_2: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/UltroidSupportChat)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}**"
-inline_3: "[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/UltroidSupportChat)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}\n\nDᴏ **`.setdb ADDONS True`** ᴀɴᴅ ʀᴇsᴛᴀʀᴛ ᴛᴏ ɢᴇᴛ ᴀᴅᴅᴏɴs.**"
+inline_1: "[Sᴜᴘᴘᴏʀᴛ](t.me/Usern4meDoesNotExist404)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nPʟᴜɢɪɴs ~ {}**"
+inline_2: "[Sᴜᴘᴘᴏʀᴛ](t.me/Usern4meDoesNotExist404)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}**"
+inline_3: "[Sᴜᴘᴘᴏʀᴛ](t.me/Usern4meDoesNotExist404)\n\n**Hᴇʟᴘ Mᴇɴᴜ Oғ {}.\n\nAᴅᴅᴏɴs ~ {}\n\nᴋᴇᴛɪᴋ `.setdb ADDONS True` ᴅᴀɴ ʀᴇsᴛᴀʀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀᴘᴀᴛᴋᴀɴ ᴀᴅᴅᴏɴs.**"
 inline_4: "** Bᴏᴛ Oғ {}\n\nMᴀɪɴ Mᴇɴᴜ\n\nPʟᴜɢɪɴs ~ {}\nAᴅᴅᴏɴs ~ {}\nTᴏᴛᴀʟ Cᴏᴍᴍᴀɴᴅs ~ {}**"
-inline_5: "**Mᴇɴᴜ Hᴀs Bᴇᴇɴ Cʟᴏsᴇᴅ**"
+inline_5: "**Mᴇɴᴜ Tᴇʟᴀʜ Dɪᴛᴜᴛᴜᴘ**"
 inline_6: "**Voice Chat Help Menu for {}**\n**Available Commands:** `{}`\n\n@TeamUltroid"
 inline_7: "Do .help {} to get the list of commands."
 inline_8: "Click the below button to update!"
@@ -169,10 +169,10 @@ afk_6: "**I'm Going AFK.**"
 # bot
 bot_1: "Hey,  I am alive."
 bot_2: "Stats"
-bot_3: "Repo"
+bot_3: "Owner"
 bot_4: "Support"
 bot_5: "• `Restarting...`"
-alive_1: "**The Ultroid Userbot...**\n\n**{}**\n\n✵ **Owner** - `{}`\n✵ **Ultroid** - `{}`\n✵ **Py-Ultroid** - `{}`\n✵ **UpTime** - `{}`\n✵ **Python** - `{}`\n✵ **Telethon** - `{}`\n✵ **Branch** - `{}`"
+alive_1: "**The Dante Userbot...**\n\n**{}**\n\n✵ **Owner** - `{}`\n✵ **Ultroid** - `{}`\n✵ **Py-Ultroid** - `{}`\n✵ **UpTime** - `{}`\n✵ **Python** - `{}`\n✵ **Telethon** - `{}`\n✵ **Branch** - `{}`"
 log: "**Heroku** Ultroid Logs.\nPasted [here]({}) too!"
 ping: "**Pong !!** `{}ms`\n**Uptime** - `{}`"
 usage: "**⚙️ Dyno Usage ⚙️**:\n\n-> **Dyno usage for** `{}`:\n  •  **{}h**  **{}m |** `[{}%]`\n-> **Dyno hours quota remaining this month**:\n  •  **{}h**  **{}m |** `[{}%]`\n\n**Total Disk Space**: `{}`\n**Used**: `{}`\n**Free**: `{}`\n\n**📊 Data Usage 📊**\n**Upload**: `{}`\n**Down**: `{}`\n\n**CPU**: `{}%`\n**RAM**: `{}%`\n**DISK**: `{}%`"
@@ -199,7 +199,7 @@ bd_8: "`Removing...`"
 bd_9: "Channel is already removed from database. "
 
 # calculator
-calc_1: "• Ultroid Inline Calculator •"
+calc_1: "• DanteUbot Inline Calculator •"
 calc_2: "Open Calculator Again"
 
 # channel hacks
@@ -227,7 +227,7 @@ chats_1: "`Cant delete this chat.`"
 chats_2: "`I m not an admin`"
 chats_3: "#Deleted\nDeleted {}"
 chats_4: "Your [{}]({}) Group Made Boss!"
-chats_5: "Join @TeamUltroid"
+chats_5: "Gabung @MusicStreamSupport"
 chats_6: "Your {} Group/Channel Has been made Boss!"
 
 # clean action
@@ -248,7 +248,7 @@ cvt_7: "`Reply to a readable file`"
 cvt_8: "`Not A Readable File.`"
 
 # eventsofday
-eod_1: "🎊 **Events of the Day**\n\n"
+eod_1: "**Events of the Day**\n\n"
 eod_2: "• **Events for {}/2022**\n\n"
 
 # core
@@ -279,7 +279,7 @@ devs_3: "`Give Some C++ Code..`"
 # dm
 dm_1: "`Give Chat username or id where to send.`"
 dm_2: "`Give text to send or reply to msg`"
-dm_3: "⚜️ Message Delivered! ⚜️"
+dm_3: "Message Delivered!"
 dm_4: "Error : {}\nRead Usage : `{}help other`"
 dm_5: "`Check in Private.`"
 dm_6: "`No message found to deliver :(`"
@@ -593,7 +593,7 @@ help_beautify: " -\n\n• `{i}carbon <text/reply to msg/reply to document>`\n   
 help_blacklist: " -\n\n• `{i}blacklist <word/all words with a space>`\n    blacklist the choosen word in that chat.\n\n• `{i}remblacklist <word>`\n    Remove the word from blacklist..\n\n• `{i}listblacklist`\n    list all blacklisted words.\n\n  'if a person uses blacklist Word his/her msg will be deleted'\n  'And u Must be Admin in that Chat'\n"
 help_bot: "\n\n• `{i}alive` | `{i}alive inline`\n    Check if your bot is working.\n\n• `{i}ping`\n    Check Ultroid's response time.\n\n• `{i}update`\n    See changelogs if any update is available.\n\n• `{i}cmds`\n    View all plugin names.\n\n• `{i}restart`\n    To restart your bot.\n\n• `{i}logs (sys)`\n    Get the full terminal logs.\n• `{i}logs carbon`\n    Get the carbonized sys logs.\n• `{i}logs heroku`\n   Get the latest 100 lines of heroku logs.\n\n• `{i}shutdown`\n    Turn off your bot.\n"
 help_broadcast: "\n\n• `{i}addch <id/reply to list/none>`\n    Add chat to database. Adds current chat if no id specified.\n\n• `{i}remch <all/id/none>`\n    Removes the specified chat (current chat if none specified), or all chats.\n\n• `{i}broadcast <reply to msg>`\n    Send the replied message to all chats in database.\n\n• `{i}forward <reply to msg>`\n     Forward the message to all chats in database.\n\n• `{i}listchannels`\n    To get list of all added chats.\n"
-help_button: " -\n\n• `{i}button <text with button format`\n   create button u can reply to pic also\n\nFormat:- `{i}button Hey There! @UseUltroid 😎.\n[Ultroid | t.me/theUltroid][Support | t.me/UltroidSupportChat | same]\n[TeamUltroid | t.me/TeamUltroid]`\n"
+help_button: " -\n\n• `{i}button <text with button format`\n   create button u can reply to pic also\n\nFormat:- `{i}button Hey There!\n[Support | t.me/MusicStreamSupport`\n"
 help_calculator: " -\n\n•`{i}calc` - Inline Calculator\n\n"
 help_channelhacks: "\n\n🔹 `{i}shift <from channel> | <to channel>`\n     This will transfer all old post from channel A to channel B.\n      (u can use username or id of channel too)\n      example : `{i}shift @abc | @xyz`\n      [note - this (' | ') sign is nessesary]\n\n🔹 For auto-posting/forwarding all new message from any source channel to any destination channel.\n\n   `{i}asource <channel username or id>`\n      This add source channel to database\n   `{i}dsource <channel username or id>`\n      This remove source channels from database\n   `{i}listsource <channel username or id>`\n      Show list of source channels\n\n\n   `{i}adest <channel username or id>`\n      This add Ur channels to database\n   `{i}ddest <channel username or id>`\n      This Remove Ur channels from database\n   `{i}listdest <channel username or id>`\n      Show List of Ur channels\n\n   'you can set many channels in database'\n   'For activating auto-post use `{i}setdb AUTOPOST True` '\n"
 help_chatbot: " -\n\n• `{i}addai <reply to user/give username/userid>`\n   Add a AI ChatBot to reply to that user.\n\n• `{i}remai <reply to user/give username/userid>`\n   Remove the AI ChatBot.\n\n• `{i}repai <reply to user/give a message>`\n   Reply to the user with a message by an AI.\n\n• `{i}listai`\n   List the currently AI added users.\n"
