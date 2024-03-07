@@ -19,7 +19,7 @@ import random
 from . import *
 
 
-@ultroid_cmd(pattern="hack")
+@ultroid_cmd(pattern="lacak")
 async def _(event):
     animation_interval = 0.7
     animation_ttl = range(0, 11)
