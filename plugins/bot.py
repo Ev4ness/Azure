@@ -70,21 +70,21 @@ def ULTPIC():
 
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://t.me/CariSahabatOnline_Id"),
-        Button.url(get_string("bot_4"), "https://t.me/SpotifyStreamMusic"),
+        Button.url(get_string("bot_3"), "https://t.me/MusicStreamSupport"),
+        Button.url(get_string("bot_4"), "https://t.me/MusicStreamSupport"),
     ]
 ]
 
 # Will move to strings
 alive_txt = """
-BeeUBot
+DanteUBot
 
   ▢ Version - {}
-  ▢ Py-Ultroid - {}
+  ▢ DanteUBot - {}
   ▢ Telethon - {}
 """
 
-in_alive = "{}\n\n▢ <b>BeeUBot Version -><b> <code>{}</code>\n▢ <b>PyUBot -></b> <code>{}</code>\n▢ <b>Python -></b> <code>{}</code>\n▢ <b>Uptime -></b> <code>{}</code>\n▢ <b>Branch -></b>[ {} ]\n\n• <b>Join @carisahabatonline_id</b>"
+in_alive = "{}\n\n▢ <b>DanteUBot Version -><b> <code>{}</code>\n▢ <b>PyUBot -></b> <code>{}</code>\n▢ <b>Python -></b> <code>{}</code>\n▢ <b>Uptime -></b> <code>{}</code>\n▢ <b>Branch -></b>[ {} ]\n\n• <b>Join @carisahabatonline_id</b>"
 
 
 @callback("alive")
@@ -179,7 +179,7 @@ async def lol(ult):
 @ultroid_cmd(pattern="ping$", chats=[], type=["official", "assistant"])
 async def _(event):
     start = time.time()
-    x = await event.eor("▢ Pong !")
+    x = await event.eor("Pong !")
     end = round((time.time() - start) * 1000)
     uptime = time_formatter((time.time() - start_time) * 1000)
     await x.edit(get_string("ping").format(end, uptime))
