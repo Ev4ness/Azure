@@ -24,7 +24,7 @@ MSG = f"""
 **Bee - UserBot**
 ➖➖➖➖➖➖➖➖➖➖
 **Owner**: [{OWNER}](tg://user?id={ultroid_bot.uid})
-**Support**: @SpotifyStreamMusic
+**Support**: @MusicStreamSupport
 ➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -34,7 +34,7 @@ IN_BTTS = [
             "Owner",
             url="https://t.me/Usern4meDoesNotExist404",
         ),
-        Button.url("Support", url="https://t.me/carisahabatonline_id"),
+        Button.url("Support", url="https://t.me/MusicStreamSupport"),
     ]
 ]
 
@@ -134,7 +134,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/carisahabatonline_id"
+                                    "Report", "https://t.me/MusicStreamSupport"
                                 ),
                             )
                         ]
