@@ -68,7 +68,7 @@ def main():
 
     suc_msg = """
             ----------------------------------------------------------------------
-                BeeUBot has been deployed! Visit @CariSahabatOnline_Id for updates!!
+                BeeUBot has been deployed! Visit @MusicStreamSupport for updates!!
             ----------------------------------------------------------------------
     """
 
