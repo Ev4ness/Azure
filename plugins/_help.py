@@ -22,16 +22,6 @@ _main_help_menu = [
         Button.inline(get_string("help_4"), data="uh_Official_"),
         Button.inline(get_string("help_5"), data="uh_Addons_"),
     ],
-    [
-        Button.inline(get_string("help_6"), data="uh_VCBot_"),
-        Button.inline(get_string("help_7"), data="inlone"),
-    ],
-    [
-        Button.inline(get_string("help_8"), data="ownr"),
-        Button.url(
-            get_string("help_9"), url=f"https://t.me/{asst.me.username}?start=set"
-        ),
-    ],
     [Button.inline(get_string("help_10"), data="close")],
 ]
 
@@ -46,19 +36,19 @@ async def _help(ult):
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Official"][plug]:
                     output += i
-                output += "\n© @carisahabatonline_id"
+                output += "\n@MusicStreamSupport"
                 await ult.eor(output)
             elif HELP.get("Addons") and plug in HELP["Addons"]:
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["Addons"][plug]:
                     output += i
-                output += "\n© @Usern4meDoesNotExist404"
+                output += "\n@MusicStreamSupport"
                 await ult.eor(output)
             elif HELP.get("VCBot") and plug in HELP["VCBot"]:
                 output = f"**Plugin** - `{plug}`\n"
                 for i in HELP["VCBot"][plug]:
                     output += i
-                output += "\n© @carisahabatonline_id"
+                output += "\n@MusicStreamSupport"
                 await ult.eor(output)
             else:
                 try:
@@ -66,7 +56,7 @@ async def _help(ult):
                     for d in LIST[plug]:
                         x += HNDLR + d
                         x += "\n"
-                    x += "\n© @carisahabatonline_id"
+                    x += "\n@MusicStreamSupport"
                     await ult.eor(x)
                 except BaseException:
                     file = None
@@ -105,7 +95,7 @@ async def _help(ult):
                     await ult.eor(output)
         except BaseException as er:
             LOGS.exception(er)
-            await ult.eor("Terjadi kesalahan 🤔.")
+            await ult.eor("Terjadi kesalahan.")
     else:
         try:
             results = await ult.client.inline_query(asst.me.username, "ultd")
