@@ -17,11 +17,11 @@ Perintah Tersedia Untuk UBot Dante
 from time import sleep
 from . import (
     eor,
-    kazu_cmd,
+    ultroid_cmd,
 )
 
 
-@kazu_cmd(outgoing=True, pattern="epek")
+@ultroid_cmd(outgoing=True, pattern="epek")
 async def _(event):
     xx = await event.eor("**EH PEPEKK**")
     sleep(1)
@@ -45,7 +45,7 @@ async def _(event):
 # Create by myself @localheart
 
 
-@kazu_cmd(outgoing=True, pattern="tempik")
+@ultroid_cmd(outgoing=True, pattern="tempik")
 async def _(event):
     xx = await event.eor("**hai tempik 🥹**")
     sleep(1)
@@ -69,7 +69,7 @@ async def _(event):
 # Create by myself @localheart
 
 
-@kazu_cmd(outgoing=True, pattern="Ll")
+@ultroid_cmd(outgoing=True, pattern="Ll")
 async def _(event):
     xx = await event.eor("**KOK BAU YAK**")
     sleep(1)
@@ -93,7 +93,7 @@ async def _(event):
 # Create by myself @localheart
 
 
-@kazu_cmd(outgoing=True, pattern="love")
+@ultroid_cmd(outgoing=True, pattern="love")
 async def _(event):
     xx = await event.eor("`hai kak:v`")
     sleep(1)
@@ -116,7 +116,7 @@ async def _(event):
     await event.eor("`LOVE YOU MOGA SELALU BAHAGIA YA 🤍`")
 # Create by myself @localheart
 
-@kazu_cmd(outgoing=True, pattern="halah")
+@ultroid_cmd(outgoing=True, pattern="halah")
 async def _(event):
     xx = await event.eor("**HALAHHH**")
     sleep(1.5)
