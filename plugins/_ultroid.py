@@ -1,9 +1,3 @@
-# Ultroid - UserBot
-# Copyright (C) 2021-2023 TeamUltroid
-#
-# This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
-# PLease read the GNU Affero General Public License in
-# <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 from telethon.errors import (
     BotMethodInvalidError,
@@ -14,18 +8,18 @@ from telethon.errors import (
 from . import LOG_CHANNEL, LOGS, Button, asst, eor, get_string, ultroid_cmd
 
 REPOMSG = """
-▢ **BEE UBOT** •\n
+▢ **Dante UBot** •\n
 ▢ Owner - [Klik disini](https://t.me/Usern4meDoesNotExist404)
-▢ Group - [Klik disini](https://t.me/carisahabatonline_id)
-▢ Support - @SpotifyStreamMusic
+▢ Group - [Klik disini](https://t.me/MusicStreamSupport)
+▢ Support - @MusicStreamSupport
 """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://t.me/SpotifyStreamMusic"),
+        Button.url(get_string("bot_3"), "https://t.me/MusicStreamSupport"),
         Button.url("Developer", "https://t.me/Usern4meDoesNotExist404"),
     ],
-    [Button.url("Support Group", "t.me/carisahabatonline_id")],
+    [Button.url("Support Group", "t.me/MusicStreamSupport")],
 ]
 
 ULTSTRING = """🎇 **Thanks for Deploying Bee Ubot!**
