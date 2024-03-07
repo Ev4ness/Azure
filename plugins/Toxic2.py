@@ -17,11 +17,11 @@
 from time import sleep
 from . import (
     eor,
-    dante_cmd,
+    ultroid_cmd,
 )
 
 
-@dante_cmd(outgoing=True, pattern="ngentot")
+@ultroid_cmd(outgoing=True, pattern="ngentot")
 async def _(event):
     xx = await event.eor("**EH ANAK NGENTODD!!**")
     sleep(1)
@@ -44,7 +44,7 @@ async def _(event):
     await event.eor("**HAHAHAHA CUIHH GOBLOKK**")
 
 
-@dante_cmd(outgoing=True, pattern="goblok")
+@ultroid_cmd(outgoing=True, pattern="goblok")
 async def _(event):
     xx = await event.eor("**WOYY GOBLOK!!**")
     sleep(1)
@@ -67,7 +67,7 @@ async def _(event):
     await event.eor("**HAHAHAHA**")
 
 
-@dante_cmd(outgoing=True, pattern="ngatain")
+@ultroid_cmd(outgoing=True, pattern="ngatain")
 async def _(event):
     xx = await event.eor("**BABI!!**")
     sleep(1)
@@ -89,7 +89,7 @@ async def _(event):
     sleep(1)
     await event.eor("**HAHAHAHA**")
 
-@dante_cmd(outgoing=True, pattern="yatim")
+@ultroid_cmd(outgoing=True, pattern="yatim")
 async def _(event):
     xx = await event.eor("`HALLOOO ANAK YATIMM, Jangan Lupa Makan Yaa`")
     sleep(1)
@@ -111,7 +111,7 @@ async def _(event):
     sleep(1)
     await event.eor("`Tapi Bo'ong KWKWKW`")
 
-@dante_cmd(outgoing=True, pattern="komto")
+@ultroid_cmd(outgoing=True, pattern="komto")
 async def _(event):
     xx = await event.eor("**EHHH EHH KONTULL**")
     sleep(1.5)
