@@ -5,49 +5,53 @@
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
-from . import get_help
+"""
+✘ **Bantuan Untuk Blacklist**
 
-__doc__ = get_help("help_blacklist")
+๏ **Perintah:** `bl` <kata>
+◉ **Keterangan:** Daftar hitam kan kata didalam grup.
+
+๏ **Perintah:** `wl` <kata>
+◉ **Keterangan:** Hapus kata dari daftar hitam.
+
+๏ **Perintah:** `listbl`
+◉ **Keterangan:** Lihat Semua Daftar Kata Terlarang .
+"""
 
 
-from pyUltroid.dB.blacklist_db import (
-    add_blacklist,
-    get_blacklist,
-    list_blacklist,
-    rem_blacklist,
-)
+from UBot.dB.blacklist_db import (add_blacklist, get_blacklist, list_blacklist,
+                                  rem_blacklist)
 
-from . import events, get_string, udB, ultroid_bot, ultroid_cmd
+from . import UBot_bot, UBot_cmd, events, get_string, udB
 
 
-@ultroid_cmd(pattern="blacklist( (.*)|$)", admins_only=True)
+@UBot_cmd(pattern="^[Bb][l]( (.*)|$)")
 async def af(e):
-    wrd = e.pattern_match.group(1).strip()
+    direp = await e.get_reply_message()
+    teks = direp.text if direp else e.pattern_match.group(3)
     chat = e.chat_id
-    if not (wrd):
+    if not teks:
         return await e.eor(get_string("blk_1"), time=5)
-    wrd = e.text[11:]
-    heh = wrd.split(" ")
-    for z in heh:
-        add_blacklist(int(chat), z.lower())
-    ultroid_bot.add_handler(blacklist, events.NewMessage(incoming=True))
-    await e.eor(get_string("blk_2").format(wrd))
+    kata = teks.split()
+    for x in kata:
+        add_blacklist(int(chat), x.lower())
+    UBot_bot.add_handler(blacklist, events.NewMessage(incoming=True))
+    await e.eor(get_string("blk_2").format(x))
 
 
-@ultroid_cmd(pattern="remblacklist( (.*)|$)", admins_only=True)
+@UBot_cmd(pattern="^[Ww][l]( (.*)|$)")
 async def rf(e):
-    wrd = e.pattern_match.group(1).strip()
+    teks = e.pattern_match.group(2)
     chat = e.chat_id
-    if not wrd:
+    if not teks:
         return await e.eor(get_string("blk_3"), time=5)
-    wrd = e.text[14:]
-    heh = wrd.split(" ")
-    for z in heh:
-        rem_blacklist(int(chat), z.lower())
-    await e.eor(get_string("blk_4").format(wrd))
+    kata = teks.split()
+    for x in kata:
+        rem_blacklist(int(chat), x)
+    await e.eor(get_string("blk_4").format(x))
 
 
-@ultroid_cmd(pattern="listblacklist$", admins_only=True)
+@UBot_cmd(pattern="^[Ll][i][s][t][b][l]")
 async def lsnote(e):
     if x := list_blacklist(e.chat_id):
         sd = get_string("blk_5")
@@ -66,4 +70,4 @@ async def blacklist(e):
 
 
 if udB.get_key("BLACKLIST_DB"):
-    ultroid_bot.add_handler(blacklist, events.NewMessage(incoming=True))
+    UBot_bot.add_handler(blacklist, events.NewMessage(incoming=True))
