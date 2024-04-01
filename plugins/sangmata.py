@@ -26,15 +26,15 @@ except ImportError:
     WebShot = None
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from . import UBot_cmd, get_string
+from . import ultroid_cmd, get_string
 
 
-@UBot_cmd(
+@ultroid_cmd(
     pattern="[Ii]d( (.*)|$)",
     manager=True,
 )
 async def _(event):
-    UBot = event
+    ultroid = event
     if match := event.pattern_match.group(1).strip():
         try:
             ids = await event.client.parse_id(match)
@@ -51,10 +51,10 @@ async def _(event):
         bot_api_file_id = event.file.id
         data += f"\n**Bot API File ID:**  `{bot_api_file_id}`"
     data += f"\n**Msg ID:**  `{event.id}`"
-    await UBot.eor(data)
+    await ultroid.eor(data)
 
 
-@UBot_cmd(
+@ultroid_cmd(
     pattern="[Ss]g( (.*)|$)",
 )
 async def lastname(steal):
