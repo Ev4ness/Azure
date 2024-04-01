@@ -6,7 +6,7 @@
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 
 """
-✘ **Bantuan Untuk Blacklist**
+**Bantuan Untuk Blacklist**
 
 ๏ **Perintah:** `bl` <kata>
 ◉ **Keterangan:** Daftar hitam kan kata didalam grup.
@@ -22,10 +22,10 @@
 from UBot.dB.blacklist_db import (add_blacklist, get_blacklist, list_blacklist,
                                   rem_blacklist)
 
-from . import UBot_bot, UBot_cmd, events, get_string, udB
+from . import ultroid_bot, ultroid_cmd, events, get_string, udB
 
 
-@UBot_cmd(pattern="^[Bb][l]( (.*)|$)")
+@ultroid_cmd(pattern="^[Bb][l]( (.*)|$)")
 async def af(e):
     direp = await e.get_reply_message()
     teks = direp.text if direp else e.pattern_match.group(3)
@@ -35,11 +35,11 @@ async def af(e):
     kata = teks.split()
     for x in kata:
         add_blacklist(int(chat), x.lower())
-    UBot_bot.add_handler(blacklist, events.NewMessage(incoming=True))
+    ultroid_bot.add_handler(blacklist, events.NewMessage(incoming=True))
     await e.eor(get_string("blk_2").format(x))
 
 
-@UBot_cmd(pattern="^[Ww][l]( (.*)|$)")
+@ultroid_cmd(pattern="^[Ww][l]( (.*)|$)")
 async def rf(e):
     teks = e.pattern_match.group(2)
     chat = e.chat_id
@@ -51,7 +51,7 @@ async def rf(e):
     await e.eor(get_string("blk_4").format(x))
 
 
-@UBot_cmd(pattern="^[Ll][i][s][t][b][l]")
+@ultroid_cmd(pattern="^[Ll][i][s][t][b][l]")
 async def lsnote(e):
     if x := list_blacklist(e.chat_id):
         sd = get_string("blk_5")
@@ -70,4 +70,4 @@ async def blacklist(e):
 
 
 if udB.get_key("BLACKLIST_DB"):
-    UBot_bot.add_handler(blacklist, events.NewMessage(incoming=True))
+    ultroid_bot.add_handler(blacklist, events.NewMessage(incoming=True))
