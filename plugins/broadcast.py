@@ -24,14 +24,14 @@
 """
 import asyncio
 
-from UBot.dB import DEVS
-from UBot.dB.gcast_blacklist_db import add_gblacklist, list_bl, rem_gblacklist
+from pyUltroid.dB import DEVS
+from pyUltroid.dB.gcast_blacklist_db import add_gblacklist, list_bl, rem_gblacklist
 from telethon.errors.rpcerrorlist import FloodWaitError
 
 from . import *
 
 
-@UBot_cmd(pattern="[gG][c][a][s][t]( (.*)|$)", fullsudo=False)
+@ultroid_cmd(pattern="[gG][c][a][s][t]( (.*)|$)", fullsudo=False)
 async def gcast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
@@ -72,7 +72,7 @@ async def gcast(event):
     )
 
 
-@UBot_cmd(pattern="[gG][u][c][a][s][t]( (.*)|$)", fullsudo=False)
+@ultroid_cmd(pattern="[gG][u][c][a][s][t]( (.*)|$)", fullsudo=False)
 async def gucast(event):
     if xx := event.pattern_match.group(1):
         msg = xx
@@ -107,18 +107,18 @@ async def gucast(event):
     )
 
 
-@UBot_cmd(pattern="[Aa][d][d][b][l]")
+@ultroid_cmd(pattern="[Aa][d][d][b][l]")
 @register(incoming=True, from_users=DEVS, pattern=r"^Addbl$")
 async def blacklist_(event):
     await gblacker(event, "add")
 
 
-@UBot_cmd(pattern="[dD][e][l][b][l]")
+@ultroid_cmd(pattern="[dD][e][l][b][l]")
 async def ungblacker(event):
     await gblacker(event, "remove")
 
 
-@UBot_cmd(pattern="[Bb][l][c][h][a][t]")
+@ultroid_cmd(pattern="[Bb][l][c][h][a][t]")
 async def chatbl(event):
     id = event.chat_id
     if xx := list_bl(id):
