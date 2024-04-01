@@ -19,7 +19,7 @@
 """
 
 
-from UBot.dB.blacklist_db import (add_blacklist, get_blacklist, list_blacklist,
+from ultroid.dB.blacklist_db import (add_blacklist, get_blacklist, list_blacklist,
                                   rem_blacklist)
 
 from . import ultroid_bot, ultroid_cmd, events, get_string, udB
